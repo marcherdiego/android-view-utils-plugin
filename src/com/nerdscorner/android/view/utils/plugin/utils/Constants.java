@@ -7,6 +7,8 @@ public class Constants {
     public static final String XML_EXTENSION = "xml";
     public static final String LAYOUT_FOLDER = "layout";
     public static final String NEW_LINE = "\n";
+    public static final String RES = "res";
+    public static final String RESOURCES = "resources";
 
     public static class Properties {
         public static final String PROPERTY_PACKAGE_NAME = "package_name";

@@ -137,7 +137,8 @@ class LayoutFileSelectorDialog extends JDialog {
                         component,
                         packageName,
                         adapterName,
-                        layoutWidgets
+                        layoutWidgets,
+                        layoutFile.getName().substring(0, layoutFile.getName().lastIndexOf('.'))
                 );
             } catch (IOException e) {
                 e.printStackTrace();
@@ -173,6 +174,6 @@ class LayoutFileSelectorDialog extends JDialog {
         //Package name
         Manifest manifest = ManifestUtils.getManifest(baseFolder);
         String savedPackageName = propertiesComponent.getValue(Constants.Properties.PROPERTY_PACKAGE_NAME, "");
-        packageName.setText(savedPackageName.equals("") ? (manifest == null ? "" : manifest.getPkg()) : savedPackageName);
+        packageName.setText(manifest == null ? savedPackageName : manifest.getPkg());
     }
 }

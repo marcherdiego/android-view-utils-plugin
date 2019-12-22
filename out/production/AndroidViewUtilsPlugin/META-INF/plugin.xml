@@ -1,17 +1,18 @@
 <idea-plugin>
     <id>com.nerdscorner.android.view.utils.plugin</id>
-    <name>Plugin display name here</name>
-    <version>1.0</version>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>Android View Utils</name>
+    <version>1.1.0</version>
+    <vendor email="diego@marcher.com.uy" url="http://diego.marcher.com.uy">Nerd's Corner</vendor>
 
     <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Plugin with view utilities.
+      In this first release creating a RecyclerView Adapter given a view is possible!
+      </em>
     ]]></description>
 
     <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      Initial release!
+      RecyclerView adapter now references the view!
     ]]>
     </change-notes>
 
@@ -26,6 +27,7 @@
 
     <idea-version since-build="145.0"/>
     <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
 
     <extensions defaultExtensionNs="com.intellij">
     </extensions>

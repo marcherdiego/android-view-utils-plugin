@@ -25,18 +25,6 @@ public class LayoutScanner {
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document document = builder.parse(layoutFile.getInputStream());
             Element root = document.getDocumentElement();
-
-//            //returns specific attribute
-//            root.getAttribute("attributeName");
-//
-//            //returns a Map (table) of names/values
-//            root.getAttributes();
-//            //returns a list of subelements of specified name
-//            root.getElementsByTagName("subelementName");
-//
-//            //returns a list of all child nodes
-//            root.getChildNodes();
-
             return findWidgets(root);
         } catch (Exception e) {
             e.printStackTrace();

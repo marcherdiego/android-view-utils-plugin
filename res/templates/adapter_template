@@ -13,7 +13,7 @@ class $ADAPTER_NAME$ : RecyclerView.Adapter<ViewHolder>() {
         return ViewHolder(
                 LayoutInflater
                         .from(parent.context)
-                        .inflate(R.layout.<<YOUR_LAYOUT_HERE>>, parent, false)
+                        .inflate(R.layout.$LAYOUT_NAME$, parent, false)
         )
     }
 
@@ -26,6 +26,5 @@ class $ADAPTER_NAME$ : RecyclerView.Adapter<ViewHolder>() {
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-$WIDGETS_BINDING$
-    }
+$WIDGETS_BINDING$   }
 }

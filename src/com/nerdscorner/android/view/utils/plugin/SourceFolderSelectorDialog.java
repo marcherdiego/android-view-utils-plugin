@@ -60,7 +60,11 @@ public class SourceFolderSelectorDialog extends JDialog {
         int currentIndex = 0;
         int selectedIndex = 0;
         for (VirtualFile sourceFolder : sourceFolders) {
-            if (sourceFolder.getUrl().contains(Constants.GENERATED) || sourceFolder.getUrl().contains(Constants.BUILD)) {
+            String url = sourceFolder.getUrl();
+            if (url.contains(Constants.GENERATED)
+                    || url.contains(Constants.BUILD)
+                    || url.endsWith(Constants.RES)
+                    || url.endsWith(Constants.RESOURCES)) {
                 continue;
             }
             if (sourceFolder.getPath().equals(sourceFolderName)) {

@@ -22,7 +22,7 @@ class RecyclerViewAdapterCreator extends AnAction {
             sourceFolderSelectorDialog.pack();
             sourceFolderSelectorDialog.setLocationRelativeTo(null);
             sourceFolderSelectorDialog.setResizable(true);
-            sourceFolderSelectorDialog.setTitle("Select source folder");
+            sourceFolderSelectorDialog.setTitle("Select source folder (adapter will be created here)");
             sourceFolderSelectorDialog.setVisible(true);
         }
     }
