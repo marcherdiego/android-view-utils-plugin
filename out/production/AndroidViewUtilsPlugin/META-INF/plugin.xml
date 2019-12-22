@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.nerdscorner.android.view.utils.plugin</id>
     <name>Android View Utils</name>
-    <version>1.1.0</version>
+    <version>1.0.0</version>
     <vendor email="diego@marcher.com.uy" url="http://diego.marcher.com.uy">Nerd's Corner</vendor>
 
     <description><![CDATA[

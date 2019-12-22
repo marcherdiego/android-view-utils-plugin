@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9931a476-d65f-4f87-8117-9a713237be5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AndroidViewUtilsPlugin/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidViewUtilsPlugin/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AndroidViewUtilsPlugin/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidViewUtilsPlugin/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AndroidViewUtilsPlugin/templates/adapter_template" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AndroidViewUtilsPlugin/templates/adapter_template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/templates/adapter_template" beforeDir="false" afterPath="$PROJECT_DIR$/res/templates/adapter_template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/LayoutFileSelectorDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/LayoutFileSelectorDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/RecyclerViewAdapterCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/RecyclerViewAdapterCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/SourceFolderSelectorDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/SourceFolderSelectorDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/LayoutScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/LayoutScanner.java" afterDir="false" />
-    </list>
+    <list default="true" id="9931a476-d65f-4f87-8117-9a713237be5f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="270">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -190,144 +177,6 @@
               <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="LayoutFileSelectorDialog" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="ResultDialog" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="SourceFolderSelectorDialog" type="e9f4de52:FormNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -432,6 +281,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -446,7 +296,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24439198" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38488784" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3290398" />
@@ -719,8 +569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
