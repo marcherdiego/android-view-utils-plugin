@@ -55,4 +55,27 @@ public class StringUtils {
         }
         return stringBuilder.toString();
     }
+
+
+    public static String snakeToCamel(String id) {
+        if (StringUtils.isNullOrEmpty(id)) {
+            return id;
+        }
+        StringBuilder result = new StringBuilder();
+        boolean shouldWriteUppercase = false;
+        for (int i = 0; i < id.length(); i++) {
+            String nextChar = String.valueOf(id.charAt(i));
+            if (nextChar.equals("_")) {
+                shouldWriteUppercase = true;
+                continue;
+            }
+            if (shouldWriteUppercase) {
+                shouldWriteUppercase = false;
+                result.append(nextChar.toUpperCase());
+            } else {
+                result.append(nextChar);
+            }
+        }
+        return result.toString();
+    }
 }

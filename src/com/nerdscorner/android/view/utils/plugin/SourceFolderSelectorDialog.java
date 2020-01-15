@@ -16,6 +16,7 @@ import com.intellij.ide.util.PropertiesComponent;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.roots.ProjectRootManager;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.nerdscorner.android.view.utils.plugin.interfaces.DialogCallback;
 import com.nerdscorner.android.view.utils.plugin.utils.Constants;
 
 public class SourceFolderSelectorDialog extends JDialog {
@@ -27,6 +28,8 @@ public class SourceFolderSelectorDialog extends JDialog {
     private JButton buttonOK;
     private JButton buttonCancel;
     private JList<VirtualFile> sourceFolders;
+
+    private DialogCallback callback;
 
     public SourceFolderSelectorDialog(Project project) {
         this.project = project;
@@ -87,16 +90,17 @@ public class SourceFolderSelectorDialog extends JDialog {
         PropertiesComponent propertiesComponent = PropertiesComponent.getInstance(project);
         propertiesComponent.setValue(PROPERTY_SOURCE_FOLDER_NAME, baseFolder.getPath());
 
-        LayoutFileSelectorDialog layoutFileSelectorDialog = new LayoutFileSelectorDialog(project, baseFolder);
-        layoutFileSelectorDialog.pack();
-        layoutFileSelectorDialog.setLocationRelativeTo(null);
-        layoutFileSelectorDialog.setTitle("Select layout file...");
-        layoutFileSelectorDialog.setResizable(true);
-        layoutFileSelectorDialog.setVisible(true);
+        if (callback != null) {
+            callback.onOK(baseFolder);
+        }
     }
 
     private void onCancel() {
         setVisible(false);
         dispose();
+    }
+
+    public void setCallback(DialogCallback callback) {
+        this.callback = callback;
     }
 }

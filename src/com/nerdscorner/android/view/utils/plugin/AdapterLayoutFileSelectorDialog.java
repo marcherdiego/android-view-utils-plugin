@@ -33,7 +33,7 @@ import com.nerdscorner.android.view.utils.plugin.utils.LayoutScanner;
 import com.nerdscorner.android.view.utils.plugin.utils.ManifestUtils;
 import com.nerdscorner.android.view.utils.plugin.utils.StringUtils;
 
-class LayoutFileSelectorDialog extends JDialog {
+class AdapterLayoutFileSelectorDialog extends JDialog {
     private final Project project;
     private JPanel contentPane;
     private JButton buttonOK;
@@ -43,7 +43,7 @@ class LayoutFileSelectorDialog extends JDialog {
     private JTextField packageName;
     private JTextField adapterName;
 
-    public LayoutFileSelectorDialog(Project project, VirtualFile baseFolder) {
+    public AdapterLayoutFileSelectorDialog(Project project, VirtualFile baseFolder) {
         this.project = project;
         this.baseFolder = baseFolder;
         setContentPane(contentPane);

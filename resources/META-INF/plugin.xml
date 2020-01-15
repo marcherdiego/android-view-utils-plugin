@@ -41,6 +41,16 @@
                 second-keystroke="shift ctrl R"/>
             <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
+
+        <action id="Create View Bindings"
+                class="com.nerdscorner.android.view.utils.plugin.ViewBindingCreator"
+                text="Create view bindings from layout...">
+            <keyboard-shortcut
+                keymap="$default"
+                first-keystroke="shift meta B"
+                second-keystroke="shift ctrl B"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
     </actions>
 
 </idea-plugin>

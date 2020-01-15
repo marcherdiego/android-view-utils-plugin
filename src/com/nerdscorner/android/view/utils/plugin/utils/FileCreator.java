@@ -16,10 +16,10 @@ public class FileCreator {
     private static final String PACKAGE_NAME_KEY = "$PACKAGE_NAME$";
     private static final String ADAPTER_NAME_KEY = "$ADAPTER_NAME$";
     private static final String WIDGETS_BINDING_KEY = "$WIDGETS_BINDING$";
-    private static final String IMPORTS_BLOCK_KEY = "$IMPORTS_BLOCK$";
+    public static final String IMPORTS_BLOCK_KEY = "$IMPORTS_BLOCK$";
     private static final String LAYOUT_NAME_KEY = "$LAYOUT_NAME$";
 
-    private static final String WIDGET_IMPORT_ROW = "import %s\n";
+    public static final String WIDGET_IMPORT_ROW = "import %s\n";
     private static final String WIDGET_BINDING_ROW = "\t\tval %s: %s = itemView.findViewById(R.id.%s)\n";
 
     public static void createFile(InputStream inputStream, File file, String packageName, String adapterName, List<AndroidWidget> widgets,
@@ -41,7 +41,7 @@ public class FileCreator {
                                 .append(
                                         String.format(
                                                 WIDGET_BINDING_ROW,
-                                                snakeToCamel(androidWidget.getId()),
+                                                StringUtils.snakeToCamel(androidWidget.getId()),
                                                 androidWidget.getType(),
                                                 androidWidget.getId()
                                         )
@@ -71,27 +71,5 @@ public class FileCreator {
             fileWriter.write(parsedContent);
             fileWriter.close();
         }
-    }
-
-    private static String snakeToCamel(String id) {
-        if (StringUtils.isNullOrEmpty(id)) {
-            return id;
-        }
-        StringBuilder result = new StringBuilder();
-        boolean shouldWriteUppercase = false;
-        for (int i = 0; i < id.length(); i++) {
-            String nextChar = String.valueOf(id.charAt(i));
-            if (nextChar.equals("_")) {
-                shouldWriteUppercase = true;
-                continue;
-            }
-            if (shouldWriteUppercase) {
-                shouldWriteUppercase = false;
-                result.append(nextChar.toUpperCase());
-            } else {
-                result.append(nextChar);
-            }
-        }
-        return result.toString();
     }
 }
