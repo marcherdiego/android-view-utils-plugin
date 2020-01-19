@@ -1,18 +1,20 @@
 <idea-plugin>
     <id>com.nerdscorner.android.view.utils.plugin</id>
     <name>Android View Utils</name>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <vendor email="diego@marcher.com.uy" url="http://diego.marcher.com.uy">Nerd's Corner</vendor>
 
     <description><![CDATA[
       Plugin with view utilities.
       In this first release creating a RecyclerView Adapter given a view is possible!
+      It also provides the ability to bind views to its controller class by simply right-clicking the file and selecting the 'Create view bindings from layout...' option
       </em>
     ]]></description>
 
     <change-notes><![CDATA[
       Initial release!
       RecyclerView adapter now references the view!
+      You can now bind views to its controller class by simply right-clicking the file and selecting the 'Create view bindings from layout...' option !
     ]]>
     </change-notes>
 
