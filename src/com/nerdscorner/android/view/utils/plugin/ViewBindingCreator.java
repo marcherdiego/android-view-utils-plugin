@@ -22,6 +22,7 @@ import com.nerdscorner.android.view.utils.plugin.utils.StringUtils;
 class ViewBindingCreator extends AnAction {
 
     private static final String JAVA = "java";
+    private static final String KOTLIN = "kotlin";
     private String packageName;
 
     @Override
@@ -43,7 +44,7 @@ class ViewBindingCreator extends AnAction {
     }
 
     private VirtualFile navigateToRootSourceFolder(VirtualFile selectedFile) {
-        if (selectedFile.getName().equals(JAVA)) {
+        if (selectedFile.getName().equals(JAVA) || selectedFile.getName().equals(KOTLIN)) {
             return selectedFile;
         }
         return navigateToRootSourceFolder(selectedFile.getParent());
