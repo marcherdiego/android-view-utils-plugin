@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9931a476-d65f-4f87-8117-9a713237be5f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,17 +34,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="419">
+              <caret line="251" column="29" selection-start-line="251" selection-start-column="29" selection-end-line="251" selection-end-column="29" />
+              <folding>
+                <element signature="method#createJavaBindings#0;class#ViewBindingCreator#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/javax/swing/DefaultButtonModel.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3240">
-              <caret line="258" selection-start-line="258" selection-end-line="258" />
+            <state relative-caret-position="257">
+              <caret line="135" column="17" lean-forward="true" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3537#3538#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/ManifestUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="305">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -59,28 +83,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/templates/adapter_template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/SourceFolderSelectorDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="15">
               <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" column="59" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -93,6 +99,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="21" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -138,16 +153,16 @@
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/LayoutFileSelectorDialog.form" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/LayoutScanner.java" />
         <option value="$PROJECT_DIR$/res/templates/adapter_template" />
-        <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/interfaces/DialogCallback.java" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/SourceFolderSelectorDialog.java" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/LayoutFileSelectorDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.form" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/RecyclerViewAdapterCreator.java" />
-        <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.java" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/StringUtils.java" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.java" />
+        <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.java" />
         <option value="$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingCreator.java" />
       </list>
     </option>
@@ -172,6 +187,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,28 +199,6 @@
             <path>
               <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -267,43 +262,7 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="AdapterLayoutFileSelectorDialog" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidViewUtilsPlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nerdscorner" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="SourceFolderSelectorDialog" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="Android View Utils Plugin" type="b2602c69:ProjectViewProjectNode" />
@@ -321,8 +280,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,21 +380,50 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25396827" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17826618" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1475797" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.113341205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35655254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24675325" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.14994097" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.29161748" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32821724" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Maven" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="8" weight="0.07387058" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2002442" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1475797" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35655254" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.14994097" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.29161748" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32821724" />
@@ -450,7 +436,7 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="right" id="Structure" order="8" visible="true" weight="0.07387058" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -665,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -691,9 +670,6 @@
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/actionSystem/AnAction.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -723,32 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-346">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3135#3136#0" expanded="true" />
-            <element signature="e#3175#3176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/templates/adapter_template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/SourceFolderSelectorDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/AdapterLayoutFileSelectorDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -763,23 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="23" column="107" selection-start-line="23" selection-start-column="107" selection-end-line="23" selection-end-column="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/ManifestUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -803,10 +736,100 @@
     <entry file="file://$PROJECT_DIR$/.idea/libraries/annotations_13_0.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/javax/swing/DefaultButtonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/templates/adapter_template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/ManifestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/SourceFolderSelectorDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/utils/FileCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="21" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/javax/swing/ButtonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="347" column="20" lean-forward="true" selection-start-line="347" selection-start-column="20" selection-end-line="347" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingLayoutFileSelectorDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3537#3538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="490" column="40" lean-forward="true" selection-start-line="490" selection-start-column="40" selection-end-line="490" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="135" column="17" lean-forward="true" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nerdscorner/android/view/utils/plugin/ViewBindingCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="419">
+          <caret line="251" column="29" selection-start-line="251" selection-start-column="29" selection-end-line="251" selection-end-column="29" />
+          <folding>
+            <element signature="method#createJavaBindings#0;class#ViewBindingCreator#0" />
+          </folding>
         </state>
       </provider>
     </entry>

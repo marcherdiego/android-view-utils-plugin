@@ -14,6 +14,7 @@ import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 import javax.swing.KeyStroke;
 
 import com.intellij.openapi.vfs.VfsUtilCore;
@@ -28,10 +29,12 @@ class ViewBindingLayoutFileSelectorDialog extends JDialog {
     private JButton buttonOK;
     private JButton buttonCancel;
     private JList<VirtualFile> layoutFilesList;
+    private JRadioButton activity;
+    private JRadioButton fragment;
     private VirtualFile baseFolder;
     private Callback callback;
 
-    public ViewBindingLayoutFileSelectorDialog(VirtualFile baseFolder) {
+    public ViewBindingLayoutFileSelectorDialog(boolean isActivity, VirtualFile baseFolder) {
         this.baseFolder = baseFolder;
         setContentPane(contentPane);
         setModal(true);
@@ -53,6 +56,14 @@ class ViewBindingLayoutFileSelectorDialog extends JDialog {
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         loadLayoutFiles();
+
+        if (isActivity) {
+            activity.setSelected(true);
+            fragment.setSelected(false);
+        } else {
+            activity.setSelected(false);
+            fragment.setSelected(true);
+        }
     }
 
     private void onOK() {
@@ -71,7 +82,7 @@ class ViewBindingLayoutFileSelectorDialog extends JDialog {
         ResultDialog resultDialog;
         if (layoutWidgets != null) {
             if (callback != null) {
-                callback.onLayoutSelected(layoutWidgets);
+                callback.onLayoutSelected(activity.isSelected(), layoutWidgets);
             }
             resultDialog = new ResultDialog("View binding created successfully!");
         } else {
@@ -123,6 +134,6 @@ class ViewBindingLayoutFileSelectorDialog extends JDialog {
     }
 
     public interface Callback {
-        void onLayoutSelected(List<AndroidWidget> layoutWidgets);
+        void onLayoutSelected(boolean isActivity, List<AndroidWidget> layoutWidgets);
     }
 }
