@@ -1,20 +1,21 @@
 package com.nerdscorner.android.view.utils.plugin.utils;
 
 import static com.intellij.codeInsight.template.impl.TemplateSettings.SPACE_CHAR;
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.DOT;
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.SLASH;
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.UNDERSCORE;
 
 public class StringUtils {
-    private static final String EMPTY_STRING = "";
-
     public static boolean isNullOrEmpty(String value) {
-        return value == null || value.equals(EMPTY_STRING);
+        return value == null || value.equals(Constants.EMPTY);
     }
 
     public static String extractSimpleClassName(String elementClass) {
-        return substringFromChar(elementClass, ".");
+        return substringFromChar(elementClass, DOT);
     }
 
     public static String extractElementId(String elementRawId) {
-        return substringFromChar(elementRawId, "/");
+        return substringFromChar(elementRawId, SLASH);
     }
 
     public static String substringFromChar(String string, String charString) {
@@ -65,7 +66,7 @@ public class StringUtils {
         boolean shouldWriteUppercase = false;
         for (int i = 0; i < id.length(); i++) {
             String nextChar = String.valueOf(id.charAt(i));
-            if (nextChar.equals("_")) {
+            if (nextChar.equals(UNDERSCORE)) {
                 shouldWriteUppercase = true;
                 continue;
             }

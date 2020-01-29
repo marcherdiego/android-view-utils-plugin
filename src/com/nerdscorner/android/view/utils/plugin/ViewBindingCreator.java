@@ -15,45 +15,13 @@ import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.nerdscorner.android.view.utils.plugin.domain.AndroidWidget;
-import com.nerdscorner.android.view.utils.plugin.utils.FileCreator;
+import com.nerdscorner.android.view.utils.plugin.utils.Constants;
 import com.nerdscorner.android.view.utils.plugin.utils.ManifestUtils;
 import com.nerdscorner.android.view.utils.plugin.utils.StringUtils;
 
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.*;
+
 class ViewBindingCreator extends AnAction {
-    private static final String ACTIVITY = "activity";
-
-    private static final String JAVA = "java";
-    private static final String KOTLIN = "kotlin";
-    private static final String SPACE = " ";
-    private static final String OPEN_BRACKET = "{";
-    private static final String TAB = "\t";
-    private static final String CLOSE_BRACKET = TAB + "}";
-    private static final String _EQUALS_ = " = ";
-    private static final String COLON_ = ": ";
-    private static final String SEMICOLON = ";";
-    private static final String EMPTY = "";
-    private static final String QUESTION_MARK = "?";
-
-    private static final String JAVA_PRIVATE_ATTRIBUTE = "\tprivate ";
-    private static final String JAVA_ACTIVITY_FIND_VIEW = "activity.";
-    private static final String JAVA_FRAGMENT_FIND_VIEW = "fragment.getView().";
-    private static final String JAVA_WIDGET_IMPORT_ROW = "import %s;";
-
-    private static final String KOTLIN_PRIVATE_VAL = "\tprivate val ";
-    private static final String KOTLIN_ACTIVITY_FIND_VIEW = "activity.";
-    private static final String KOTLIN_FRAGMENT_FIND_VIEW = "fragment.view?.";
-    private static final String KOTLIN_WIDGET_IMPORT_ROW = "import %s";
-
-    private static final String FIND_VIEW_BY_ID = "findViewById(R.id.";
-    private static final String CLOSE_PARENTHESES = ")";
-    private static final String DOT = ".";
-    private static final String IMPORT_ = "import ";
-    private static final String DOT_R = ".R";
-    private static final String ANDROID_WIDGET_DOT = "android.widget.";
-
-    private static final String INIT_METHOD_SIGNATURE_ACTIVITY = "\tprivate void init(Activity activity) {";
-    private static final String INIT_METHOD_SIGNATURE_FRAGMENT = "\tprivate void init(Fragment fragment) {";
-
     private String packageName;
 
     @Override
@@ -99,7 +67,7 @@ class ViewBindingCreator extends AnAction {
             List<String> imports = new ArrayList<>();
             while ((line = reader.readLine()) != null) {
                 if (line.contains(OPEN_BRACKET) && !firstBracketFound) {
-                    fileContent.append(FileCreator.IMPORTS_BLOCK_KEY).append(System.lineSeparator());
+                    fileContent.append(Constants.IMPORTS_BLOCK_KEY).append(System.lineSeparator());
                     fileContent.append(line).append(System.lineSeparator());
                     firstBracketFound = true;
 
@@ -161,7 +129,7 @@ class ViewBindingCreator extends AnAction {
                     .append(System.lineSeparator()));
             String fileContentString = fileContent
                     .toString()
-                    .replace(FileCreator.IMPORTS_BLOCK_KEY, importsBlock);
+                    .replace(Constants.IMPORTS_BLOCK_KEY, importsBlock);
 
             FileWriter fileWriter = new FileWriter(selectedFile.getPath());
             fileWriter.write(fileContentString);
@@ -183,7 +151,7 @@ class ViewBindingCreator extends AnAction {
             List<String> imports = new ArrayList<>();
             while ((line = reader.readLine()) != null) {
                 if (line.contains(OPEN_BRACKET) && !firstBracketFound) {
-                    fileContent.append(FileCreator.IMPORTS_BLOCK_KEY).append(System.lineSeparator());
+                    fileContent.append(Constants.IMPORTS_BLOCK_KEY).append(System.lineSeparator());
                     fileContent.append(line).append(System.lineSeparator());
                     firstBracketFound = true;
 
@@ -228,7 +196,7 @@ class ViewBindingCreator extends AnAction {
                     .append(System.lineSeparator()));
             String fileContentString = fileContent
                     .toString()
-                    .replace(FileCreator.IMPORTS_BLOCK_KEY, importsBlock);
+                    .replace(Constants.IMPORTS_BLOCK_KEY, importsBlock);
 
             FileWriter fileWriter = new FileWriter(selectedFile.getPath());
             fileWriter.write(fileContentString);

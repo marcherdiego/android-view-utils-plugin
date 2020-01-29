@@ -11,16 +11,9 @@ import java.util.List;
 
 import com.nerdscorner.android.view.utils.plugin.domain.AndroidWidget;
 
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.*;
+
 public class FileCreator {
-
-    private static final String PACKAGE_NAME_KEY = "$PACKAGE_NAME$";
-    private static final String ADAPTER_NAME_KEY = "$ADAPTER_NAME$";
-    private static final String WIDGETS_BINDING_KEY = "$WIDGETS_BINDING$";
-    public static final String IMPORTS_BLOCK_KEY = "$IMPORTS_BLOCK$";
-    private static final String LAYOUT_NAME_KEY = "$LAYOUT_NAME$";
-
-    public static final String WIDGET_IMPORT_ROW = "import %s\n";
-    private static final String WIDGET_BINDING_ROW = "\t\tval %s: %s = itemView.findViewById(R.id.%s)\n";
 
     public static void createFile(InputStream inputStream, File file, String packageName, String adapterName, List<AndroidWidget> widgets,
                                   String layoutName)

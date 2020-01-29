@@ -15,8 +15,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.nerdscorner.android.view.utils.plugin.domain.AndroidWidget;
 
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.KEY_ELEMENT_ID;
+
 public class LayoutScanner {
-    private static final String KEY_ELEMENT_ID = "android:id";
 
     @Nullable
     public static List<AndroidWidget> findWidgets(VirtualFile layoutFile) {

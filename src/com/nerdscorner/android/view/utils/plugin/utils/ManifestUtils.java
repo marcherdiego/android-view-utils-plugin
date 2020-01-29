@@ -14,6 +14,9 @@ import javax.xml.bind.Unmarshaller;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.nerdscorner.android.view.utils.plugin.domain.Manifest;
 
+
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.MANIFEST_FILE;
+
 public class ManifestUtils {
     @Nullable
     public static Manifest getManifest(VirtualFile sourceFolder) {
@@ -21,7 +24,7 @@ public class ManifestUtils {
             sourceFolder.refresh(false, true);
             JAXBContext jaxbContext = JAXBContext.newInstance(Manifest.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            VirtualFile manifestFile = sourceFolder.getParent().findChild("AndroidManifest.xml");
+            VirtualFile manifestFile = sourceFolder.getParent().findChild(MANIFEST_FILE);
             return (Manifest) jaxbUnmarshaller.unmarshal(new ByteArrayInputStream(manifestFile.contentsToByteArray()));
         } catch (JAXBException | IOException e) {
             e.printStackTrace();
@@ -32,7 +35,7 @@ public class ManifestUtils {
     public static String getManifestString(VirtualFile sourceFolder) {
         try {
             sourceFolder.refresh(false, true);
-            VirtualFile manifestFile = sourceFolder.getParent().findChild("AndroidManifest.xml");
+            VirtualFile manifestFile = sourceFolder.getParent().findChild(MANIFEST_FILE);
             BufferedReader reader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(manifestFile.contentsToByteArray())));
             String line;
             StringBuilder manifestFileBuilder = new StringBuilder();

@@ -3,6 +3,9 @@ package com.nerdscorner.android.view.utils.plugin.domain;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
+
+import static com.nerdscorner.android.view.utils.plugin.utils.Constants.DOT;
+
 @XmlRootElement
 public class Activity extends ScreenComponent {
     private String fullName;
@@ -16,7 +19,7 @@ public class Activity extends ScreenComponent {
     @XmlAttribute(namespace = "http://schemas.android.com/apk/res/android")
     public void setName(String name) {
         this.displayName = name;
-        int dotIndex = name.lastIndexOf(".");
+        int dotIndex = name.lastIndexOf(DOT);
         if (dotIndex == -1) {
             return;
         }
@@ -29,10 +32,10 @@ public class Activity extends ScreenComponent {
         if (displayName.equals(NONE)) {
             return NONE;
         }
-        return displayName.substring(displayName.lastIndexOf(".") + 1);
+        return displayName.substring(displayName.lastIndexOf(DOT) + 1);
     }
 
     public String getFullName(String basePackage) {
-        return fullName == null ? null : fullName.startsWith(".") ? basePackage + fullName : fullName;
+        return fullName == null ? null : fullName.startsWith(DOT) ? basePackage + fullName : fullName;
     }
 }
