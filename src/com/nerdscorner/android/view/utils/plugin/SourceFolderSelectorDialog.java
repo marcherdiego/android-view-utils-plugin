@@ -91,7 +91,7 @@ public class SourceFolderSelectorDialog extends JDialog {
         propertiesComponent.setValue(PROPERTY_SOURCE_FOLDER_NAME, baseFolder.getPath());
 
         if (callback != null) {
-            callback.onOK(baseFolder);
+            callback.onOk(baseFolder);
         }
     }
 
