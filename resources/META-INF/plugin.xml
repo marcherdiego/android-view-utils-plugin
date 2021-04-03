@@ -5,34 +5,30 @@
     <vendor email="diego@marcher.com.uy" url="http://diego.marcher.com.uy">Nerd's Corner</vendor>
 
     <description><![CDATA[
-      Plugin with view utilities.
-      In this first release creating a RecyclerView Adapter given a view is possible!
-      It also provides the ability to bind views to its controller class by simply right-clicking the file and selecting the 'Create view bindings from layout...' option
-      </em>
+        Plugin with view utilities.
+
+        <ul>
+            <li>Create a RecyclerView adapter from an XML view</li>
+            <li>Create view bindings based on an XML view file by simply right-clicking the file and selecting the 'Create view bindings from layout...' option</li>
+            <li>Simple tool to convert dimensions in Android.</li>
+        </ul>
     ]]></description>
 
     <change-notes><![CDATA[
-      Initial release!
-      RecyclerView adapter now references the view!
-      You can now bind views to its controller class by simply right-clicking the file and selecting the 'Create view bindings from layout...' option !
-      Fixed scrolling issue in large projects
+        <ul>
+            <li>Added tool to convert dimensions in Android.</li>
+        </ul>
     ]]>
     </change-notes>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
     <idea-version since-build="173.0"/>
-
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
 
     <idea-version since-build="145.0"/>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.androidstudio</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Dimension Tools" anchor="right" factoryClass="com.nerdscorner.android.view.utils.plugin.ui.DimensionsWindow"/>
     </extensions>
     <actions>
         <action id="Create RecyclerView Adapter"
