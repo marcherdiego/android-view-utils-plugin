@@ -13,13 +13,9 @@ import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
-import com.nerdscorner.android.view.utils.plugin.domain.Dimension;
 import com.nerdscorner.android.view.utils.plugin.ui.mvp.model.DimensionsWindowModel;
 import com.nerdscorner.android.view.utils.plugin.ui.mvp.presenter.DimensionsWindowPresenter;
 import com.nerdscorner.android.view.utils.plugin.ui.mvp.view.DimensionsWindowView;
-import com.nerdscorner.android.view.utils.plugin.utils.DimensionUtils;
-import com.nerdscorner.android.view.utils.plugin.utils.SimpleTextFieldDocumentListener;
-import com.nerdscorner.android.view.utils.plugin.utils.TextFieldDocumentListener;
 
 public class DimensionsWindow implements ToolWindowFactory {
 
@@ -39,8 +35,6 @@ public class DimensionsWindow implements ToolWindowFactory {
     private JLabel xxhdpiRoundedValue;
     private JLabel xxxhdpiRoundedValue;
     private JLabel tvdpiRoundedValue;
-
-    public static JTextField currentEditingField;
 
     private DimensionsWindowPresenter presenter;
 
@@ -75,9 +69,5 @@ public class DimensionsWindow implements ToolWindowFactory {
 
         final PropertiesComponent propertiesComponent = PropertiesComponent.getInstance();
         float lastDimenLdpi = propertiesComponent.getFloat("last_dimen_ldpi", 0f);
-    }
-
-    public static void setCurrentEditingField(JTextField currentEditingField) {
-        DimensionsWindow.currentEditingField = currentEditingField;
     }
 }
