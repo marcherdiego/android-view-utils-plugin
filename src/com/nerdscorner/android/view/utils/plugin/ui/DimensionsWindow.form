@@ -54,6 +54,7 @@
           <component id="71541" class="javax.swing.JLabel">
             <constraints/>
             <properties>
+              <horizontalAlignment value="0"/>
               <minimumSize width="60" height="16"/>
               <preferredSize width="60" height="16"/>
               <text value="tvdpi"/>
@@ -254,7 +255,7 @@
           <component id="30cc0" class="javax.swing.JLabel">
             <constraints/>
             <properties>
-              <text value="-----------------------------------------"/>
+              <text value="--------------------------------"/>
             </properties>
           </component>
         </children>

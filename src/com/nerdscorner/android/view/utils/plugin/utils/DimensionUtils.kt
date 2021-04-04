@@ -13,7 +13,6 @@ object DimensionUtils {
     const val XXXHDPI_FACTOR = 4.0f
     const val TVDPI_FACTOR = 1.33f
 
-    @JvmStatic
     @Nonnull
     @CheckReturnValue
     fun convertValue(value: String?, originalFactor: Float, targetFactor: Float): Dimension {
