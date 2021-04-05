@@ -10,6 +10,7 @@ class DimensionSet(value: String, base: Float) {
     val xxhdpiDimension = DimensionUtils.convertValue(value, base, Dimension.XXHDPI_FACTOR)
     val xxxhdpiDimension = DimensionUtils.convertValue(value, base, Dimension.XXXHDPI_FACTOR)
     val tvdpiDimension = DimensionUtils.convertValue(value, base, Dimension.TVDPI_FACTOR)
+    val customDimension = DimensionUtils.convertValue(value, base, Dimension.customFactor)
 
     fun asArray() = arrayOf(
             ldpiDimension,
@@ -18,6 +19,7 @@ class DimensionSet(value: String, base: Float) {
             xhdpiDimension,
             xxhdpiDimension,
             xxxhdpiDimension,
-            tvdpiDimension
+            tvdpiDimension,
+            customDimension
     )
 }

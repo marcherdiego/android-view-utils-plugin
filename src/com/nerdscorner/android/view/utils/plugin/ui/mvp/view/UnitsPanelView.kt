@@ -4,6 +4,7 @@ import com.nerdscorner.android.view.utils.plugin.domain.Dimension
 import com.nerdscorner.android.view.utils.plugin.domain.Unit
 import com.nerdscorner.android.view.utils.plugin.domain.UnitSet
 import com.nerdscorner.android.view.utils.plugin.utils.extensions.addTextListener
+import com.nerdscorner.android.view.utils.plugin.utils.extensions.roundToString
 import com.nerdscorner.android.view.utils.plugin.utils.extensions.setTextNoNotify
 import org.greenrobot.eventbus.EventBus
 import javax.swing.JTextField
@@ -44,7 +45,7 @@ class UnitsPanelView(
         tvdpiPx: JTextField,
         tvdpiPt: JTextField,
         tvdpiMm: JTextField,
-        private val customDensity: JTextField,
+        customDensity: JTextField,
         customInches: JTextField,
         customDp: JTextField,
         customPx: JTextField,
@@ -62,45 +63,69 @@ class UnitsPanelView(
     val customRow = arrayOf(customInches, customDp, customPx, customPt, customMm)
 
     init {
-        val units = Unit.asArray()
+        customDensity.text = (Dimension.customFactor * Dimension.MDPI).roundToString()
+
+        val ldpiUnits = Unit.asArray(Dimension.LDPI_FACTOR)
         ldpiRow.forEachIndexed { index, field ->
             field.addTextListener {
-                bus.post(UnitChangedEvent(this, Dimension.LDPI_FACTOR, units[index]))
+                bus.post(UnitChangedEvent(this, Dimension.LDPI_FACTOR, ldpiUnits[index]))
             }
         }
+
+        val mdpiUnits = Unit.asArray(Dimension.MDPI_FACTOR)
         mdpiRow.forEachIndexed { index, field ->
             field.addTextListener {
-                bus.post(UnitChangedEvent(this, Dimension.MDPI_FACTOR, units[index]))
+                bus.post(UnitChangedEvent(this, Dimension.MDPI_FACTOR, mdpiUnits[index]))
             }
         }
+
+        val hdpiUnits = Unit.asArray(Dimension.HDPI_FACTOR)
         hdpiRow.forEachIndexed { index, field ->
             field.addTextListener {
-                bus.post(UnitChangedEvent(this, Dimension.HDPI_FACTOR, units[index]))
+                bus.post(UnitChangedEvent(this, Dimension.HDPI_FACTOR, hdpiUnits[index]))
             }
         }
+
+        val xhdpiUnits = Unit.asArray(Dimension.XHDPI_FACTOR)
         xhdpiRow.forEachIndexed { index, field ->
             field.addTextListener {
-                bus.post(UnitChangedEvent(this, Dimension.XHDPI_FACTOR, units[index]))
+                bus.post(UnitChangedEvent(this, Dimension.XHDPI_FACTOR, xhdpiUnits[index]))
             }
         }
+
+        val xxhdpiUnits = Unit.asArray(Dimension.XXHDPI_FACTOR)
         xxhdpiRow.forEachIndexed { index, field ->
             field.addTextListener {
-                bus.post(UnitChangedEvent(this, Dimension.XXHDPI_FACTOR, units[index]))
+                bus.post(UnitChangedEvent(this, Dimension.XXHDPI_FACTOR, xxhdpiUnits[index]))
             }
         }
+
+        val xxxhdpiUnits = Unit.asArray(Dimension.XXXHDPI_FACTOR)
         xxxhdpiRow.forEachIndexed { index, field ->
             field.addTextListener {
-                bus.post(UnitChangedEvent(this, Dimension.XXXHDPI_FACTOR, units[index]))
+                bus.post(UnitChangedEvent(this, Dimension.XXXHDPI_FACTOR, xxxhdpiUnits[index]))
             }
         }
+
+        val tvdpiUnits = Unit.asArray(Dimension.TVDPI_FACTOR)
         tvdpiRow.forEachIndexed { index, field ->
             field.addTextListener {
-                bus.post(UnitChangedEvent(this, Dimension.TVDPI_FACTOR, units[index]))
+                bus.post(UnitChangedEvent(this, Dimension.TVDPI_FACTOR, tvdpiUnits[index]))
+            }
+        }
+
+        customDensity.addTextListener {
+            bus.post(CustomDensityChangedEvent(text))
+            bus.post(UnitChangedEvent(mdpiRow.first(), Dimension.MDPI_FACTOR, mdpiUnits.first()))
+        }
+        customRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.customFactor, Unit.asArray(Dimension.customFactor)[index]))
             }
         }
     }
 
-    fun setRowValues(excludedField: JTextField, unitSet: UnitSet, row: Array<JTextField>) {
+    fun setRowValues(excludedField: JTextField?, unitSet: UnitSet, row: Array<JTextField>) {
         val units = unitSet.asArray()
         row.forEachIndexed { index, field ->
             if (field == excludedField) {
@@ -111,4 +136,5 @@ class UnitsPanelView(
     }
 
     class UnitChangedEvent(val field: JTextField, val dimension: Float, val unit: Float)
+    class CustomDensityChangedEvent(val value: String)
 }

@@ -2,12 +2,12 @@ package com.nerdscorner.android.view.utils.plugin.domain
 
 import com.nerdscorner.android.view.utils.plugin.utils.UnitUtils
 
-class UnitSet(pxValue: String) {
-    val inches = UnitUtils.convertValue(pxValue, Unit.INCHES_FACTOR)
-    val dp = UnitUtils.convertValue(pxValue, Unit.DP_FACTOR)
-    val px = UnitUtils.convertValue(pxValue,  Unit.PX_FACTOR)
-    val pt = UnitUtils.convertValue(pxValue, Unit.PT_FACTOR)
-    val mm = UnitUtils.convertValue(pxValue, Unit.MM_FACTOR)
+class UnitSet(pxValue: String, dimensionFactor: Float, sourceFactor: Float) {
+    val inches = UnitUtils.convertValue(pxValue, sourceFactor, Unit.INCHES_FACTOR)
+    val dp = UnitUtils.convertValue(pxValue, sourceFactor, Unit.DP_FACTOR)
+    val px = UnitUtils.convertValue(pxValue, sourceFactor / dimensionFactor, Unit.PX_FACTOR)
+    val pt = UnitUtils.convertValue(pxValue, sourceFactor, Unit.PT_FACTOR)
+    val mm = UnitUtils.convertValue(pxValue, sourceFactor, Unit.MM_FACTOR)
 
     fun asArray() = arrayOf(inches, dp, px, pt, mm)
 }

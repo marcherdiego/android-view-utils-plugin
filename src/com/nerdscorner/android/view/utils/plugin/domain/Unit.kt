@@ -9,6 +9,12 @@ class Unit(var value: String) {
         const val PT_FACTOR = 0.45f
         const val MM_FACTOR = 0.15875f
 
-        fun asArray() = arrayOf(INCHES_FACTOR, DP_FACTOR, PX_FACTOR, PT_FACTOR, MM_FACTOR)
+        fun asArray(dimensionFactor: Float) = arrayOf(
+                INCHES_FACTOR,
+                DP_FACTOR,
+                dimensionFactor,
+                PT_FACTOR,
+                MM_FACTOR
+        )
     }
 }

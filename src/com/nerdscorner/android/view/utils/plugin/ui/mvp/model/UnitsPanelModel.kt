@@ -9,11 +9,11 @@ import org.greenrobot.eventbus.EventBus
 
 class UnitsPanelModel(private val bus: EventBus) {
 
-    fun convertToPx(value: String, unit: Float): String {
-        return if (unit == Unit.PX_FACTOR) {
+    fun convertToPx(value: String, sourceUnit: Float): String {
+        return if (sourceUnit == Unit.PX_FACTOR) {
             value
         } else {
-            getPxValue(value)
+            getPxValue(value, sourceUnit)
         }
     }
 
@@ -21,10 +21,10 @@ class UnitsPanelModel(private val bus: EventBus) {
 
     fun getUnitSet(dimension: Dimension): UnitSet {
         val pxValue = convertToPx(dimension.realDimension, Unit.DP_FACTOR)
-        return UnitSet(pxValue)
+        return UnitSet(pxValue, dimension.factor, Unit.PX_FACTOR)
     }
 
-    private fun getPxValue(value: String): String {
-        return UnitUtils.convertValue(value, Unit.PX_FACTOR).value
+    private fun getPxValue(value: String, sourceUnit: Float): String {
+        return UnitUtils.convertValue(value, sourceUnit, Unit.PX_FACTOR).value
     }
 }

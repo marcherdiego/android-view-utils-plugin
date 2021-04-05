@@ -22,7 +22,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="91ca8" layout-manager="GridLayoutManager" row-count="10" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="91ca8" layout-manager="GridLayoutManager" row-count="9" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Simple"/>
@@ -250,24 +250,9 @@
                   </component>
                 </children>
               </grid>
-              <grid id="a6ca0" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
-                <constraints>
-                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children>
-                  <component id="30cc0" class="javax.swing.JLabel">
-                    <constraints/>
-                    <properties>
-                      <text value="--------------------------------"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
               <grid id="95f90" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
                 <constraints>
-                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
                 <border type="none"/>
@@ -298,7 +283,7 @@
               </grid>
               <vspacer id="7a5e9">
                 <constraints>
-                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
             </children>
@@ -321,10 +306,19 @@
                   <component id="593e2" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="Density"/>
+                    </properties>
+                  </component>
+                  <component id="61c4b" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~dpi"/>
                     </properties>
                   </component>
                   <component id="c2920" class="javax.swing.JLabel">
@@ -389,10 +383,19 @@
                   <component id="e714f" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="ldpi"/>
+                    </properties>
+                  </component>
+                  <component id="32abd" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~120"/>
                     </properties>
                   </component>
                   <component id="c6842" class="javax.swing.JTextField" binding="ldpiInches">
@@ -427,10 +430,19 @@
                   <component id="30842" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="mdpi"/>
+                    </properties>
+                  </component>
+                  <component id="1ff11" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~160"/>
                     </properties>
                   </component>
                   <component id="91013" class="javax.swing.JTextField" binding="mdpiInches">
@@ -465,10 +477,19 @@
                   <component id="999ee" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="hdpi"/>
+                    </properties>
+                  </component>
+                  <component id="cf65c" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~240"/>
                     </properties>
                   </component>
                   <component id="ff913" class="javax.swing.JTextField" binding="hdpiInches">
@@ -503,10 +524,19 @@
                   <component id="b4354" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="xxhdpi"/>
+                    </properties>
+                  </component>
+                  <component id="97867" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~480"/>
                     </properties>
                   </component>
                   <component id="9b5e7" class="javax.swing.JTextField" binding="xxhdpiInches">
@@ -541,10 +571,19 @@
                   <component id="de0d9" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="xxxhdpi"/>
+                    </properties>
+                  </component>
+                  <component id="32399" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~640"/>
                     </properties>
                   </component>
                   <component id="34c84" class="javax.swing.JTextField" binding="xxxhdpiInches">
@@ -579,10 +618,19 @@
                   <component id="6d761" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="tvdpi"/>
+                    </properties>
+                  </component>
+                  <component id="79666" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~213"/>
                     </properties>
                   </component>
                   <component id="57222" class="javax.swing.JTextField" binding="tvdpiInches">
@@ -655,14 +703,7 @@
                 </constraints>
                 <properties/>
                 <border type="none"/>
-                <children>
-                  <component id="df36b" class="javax.swing.JLabel">
-                    <constraints/>
-                    <properties>
-                      <text value="--------------------------------"/>
-                    </properties>
-                  </component>
-                </children>
+                <children/>
               </grid>
               <grid id="e0a37" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
                 <constraints>
@@ -746,10 +787,19 @@
                   <component id="7fdef" class="javax.swing.JLabel">
                     <constraints/>
                     <properties>
-                      <horizontalAlignment value="0"/>
+                      <horizontalAlignment value="4"/>
                       <minimumSize width="60" height="16"/>
                       <preferredSize width="60" height="16"/>
                       <text value="xhdpi"/>
+                    </properties>
+                  </component>
+                  <component id="78923" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <minimumSize width="60" height="16"/>
+                      <preferredSize width="60" height="16"/>
+                      <text value=":~320"/>
                     </properties>
                   </component>
                   <component id="2fa32" class="javax.swing.JTextField" binding="xhdpiInches">

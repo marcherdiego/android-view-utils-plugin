@@ -9,7 +9,8 @@ object DimensionUtils {
     @CheckReturnValue
     fun convertValue(value: String?, originalFactor: Float, targetFactor: Float): Dimension {
         return Dimension(
-                try {
+                factor = targetFactor,
+                inputDimension = try {
                     val originalValue = value?.toFloat() ?: 0f
                     originalValue * (targetFactor / originalFactor)
                 } catch (e: Exception) {

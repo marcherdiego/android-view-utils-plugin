@@ -1,21 +1,16 @@
 package com.nerdscorner.android.view.utils.plugin.domain
 
+import com.nerdscorner.android.view.utils.plugin.utils.extensions.roundToString
 import kotlin.math.roundToInt
 
-class Dimension(inputDimension: Float = 0f) {
+class Dimension(val factor: Float, inputDimension: Float = 0f) {
     var realDimension = ""
     var roundedDimension = ""
 
     init {
         if (inputDimension > 0f) {
-            val scaledValueString = String.format("%.2f", inputDimension)
-            val dimension = scaledValueString.toFloat()
-            realDimension = if (dimension.compareTo(dimension.toInt()) == 0){
-                dimension.toInt().toString()
-            } else {
-                scaledValueString
-            }
-            roundedDimension = dimension.roundToInt().toString()
+            realDimension = inputDimension.roundToString()
+            roundedDimension = inputDimension.roundToInt().toString()
         }
     }
 
@@ -27,5 +22,17 @@ class Dimension(inputDimension: Float = 0f) {
         const val XXHDPI_FACTOR = 3.0f
         const val XXXHDPI_FACTOR = 4.0f
         const val TVDPI_FACTOR = 1.33f
+
+        const val MDPI = 160f
+        var customFactor = 1f
+
+        fun setCustomFactor(value: String): Float {
+            customFactor = try {
+                value.toFloat() / MDPI
+            } catch (_: Exception) {
+                1f
+            }
+            return customFactor
+        }
     }
 }
