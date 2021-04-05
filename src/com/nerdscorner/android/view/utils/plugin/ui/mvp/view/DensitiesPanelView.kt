@@ -7,7 +7,7 @@ import org.greenrobot.eventbus.EventBus
 import javax.swing.JLabel
 import javax.swing.JTextField
 
-class DimensionsWindowView(
+class DensitiesPanelView(
         ldpi: JTextField,
         mdpi: JTextField,
         hdpi: JTextField,
@@ -35,6 +35,9 @@ class DimensionsWindowView(
         ldpi.addTextListener {
             bus.post(LdpiTextChangedEvent(this))
         }
+        mdpi.addTextListener {
+            bus.post(MdpiTextChangedEvent(this))
+        }
         hdpi.addTextListener {
             bus.post(HdpiTextChangedEvent(this))
         }
@@ -49,10 +52,6 @@ class DimensionsWindowView(
         }
         tvdpi.addTextListener {
             bus.post(TvdpiTextChangedEvent(this))
-        }
-
-        mdpi.addTextListener {
-            bus.post(MdpiTextChangedEvent(this))
         }
     }
 

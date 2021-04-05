@@ -18,4 +18,14 @@ class Dimension(inputDimension: Float) {
             roundedDimension = dimension.roundToInt().toString()
         }
     }
+
+    companion object {
+        const val LDPI_FACTOR = 0.75f
+        const val MDPI_FACTOR = 1.0f
+        const val HDPI_FACTOR = 1.5f
+        const val XHDPI_FACTOR = 2.0f
+        const val XXHDPI_FACTOR = 3.0f
+        const val XXXHDPI_FACTOR = 4.0f
+        const val TVDPI_FACTOR = 1.33f
+    }
 }
