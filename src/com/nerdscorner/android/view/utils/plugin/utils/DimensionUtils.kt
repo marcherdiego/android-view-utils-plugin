@@ -10,7 +10,7 @@ object DimensionUtils {
     fun convertValue(value: String?, originalFactor: Float, targetFactor: Float): Dimension {
         return Dimension(
                 try {
-                    val originalValue = java.lang.Float.valueOf(value)
+                    val originalValue = value?.toFloat() ?: 0f
                     originalValue * (targetFactor / originalFactor)
                 } catch (e: Exception) {
                     0f

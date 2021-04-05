@@ -2,7 +2,7 @@ package com.nerdscorner.android.view.utils.plugin.domain
 
 import kotlin.math.roundToInt
 
-class Dimension(inputDimension: Float) {
+class Dimension(inputDimension: Float = 0f) {
     var realDimension = ""
     var roundedDimension = ""
 

@@ -2,7 +2,9 @@ package com.nerdscorner.android.view.utils.plugin.ui.mvp.view
 
 import com.nerdscorner.android.view.utils.plugin.domain.Dimension
 import com.nerdscorner.android.view.utils.plugin.domain.Unit
+import com.nerdscorner.android.view.utils.plugin.domain.UnitSet
 import com.nerdscorner.android.view.utils.plugin.utils.extensions.addTextListener
+import com.nerdscorner.android.view.utils.plugin.utils.extensions.setTextNoNotify
 import org.greenrobot.eventbus.EventBus
 import javax.swing.JTextField
 
@@ -50,20 +52,63 @@ class UnitsPanelView(
         customMm: JTextField,
         private val bus: EventBus
 ) {
-    private val ldpiRow = arrayOf(ldpiInches, ldpiDp, ldpiPx, ldpiPt, ldpiMm)
-    private val mdpiRow = arrayOf(mdpiInches, mdpiDp, mdpiPx, mdpiPt, mdpiMm)
-    private val hdpiRow = arrayOf(hdpiInches, hdpiDp, hdpiPx, hdpiPt, hdpiMm)
-    private val xhdpiRow = arrayOf(xhdpiInches, xhdpiDp, xhdpiPx, xhdpiPt, xhdpiMm)
-    private val xxhdpiRow = arrayOf(xxhdpiInches, xxhdpiDp, xxhdpiPx, xxhdpiPt, xxhdpiMm)
-    private val xxxhdpiRow = arrayOf(xxxhdpiInches, xxxhdpiDp, xxxhdpiPx, xxxhdpiPt, xxxhdpiMm)
-    private val tvdpiRow = arrayOf(tvdpiInches, tvdpiDp, tvdpiPx, tvdpiPt, tvdpiMm)
-    private val customRow = arrayOf(customInches, customDp, customPx, customPt, customMm)
+    val ldpiRow = arrayOf(ldpiInches, ldpiDp, ldpiPx, ldpiPt, ldpiMm)
+    val mdpiRow = arrayOf(mdpiInches, mdpiDp, mdpiPx, mdpiPt, mdpiMm)
+    val hdpiRow = arrayOf(hdpiInches, hdpiDp, hdpiPx, hdpiPt, hdpiMm)
+    val xhdpiRow = arrayOf(xhdpiInches, xhdpiDp, xhdpiPx, xhdpiPt, xhdpiMm)
+    val xxhdpiRow = arrayOf(xxhdpiInches, xxhdpiDp, xxhdpiPx, xxhdpiPt, xxhdpiMm)
+    val xxxhdpiRow = arrayOf(xxxhdpiInches, xxxhdpiDp, xxxhdpiPx, xxxhdpiPt, xxxhdpiMm)
+    val tvdpiRow = arrayOf(tvdpiInches, tvdpiDp, tvdpiPx, tvdpiPt, tvdpiMm)
+    val customRow = arrayOf(customInches, customDp, customPx, customPt, customMm)
 
     init {
-        ldpiInches.addTextListener {
-            bus.post(UnitChangedEvent(this, Dimension.LDPI_FACTOR, Unit.INCHES_FACTOR))
+        val units = Unit.asArray()
+        ldpiRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.LDPI_FACTOR, units[index]))
+            }
+        }
+        mdpiRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.MDPI_FACTOR, units[index]))
+            }
+        }
+        hdpiRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.HDPI_FACTOR, units[index]))
+            }
+        }
+        xhdpiRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.XHDPI_FACTOR, units[index]))
+            }
+        }
+        xxhdpiRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.XXHDPI_FACTOR, units[index]))
+            }
+        }
+        xxxhdpiRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.XXXHDPI_FACTOR, units[index]))
+            }
+        }
+        tvdpiRow.forEachIndexed { index, field ->
+            field.addTextListener {
+                bus.post(UnitChangedEvent(this, Dimension.TVDPI_FACTOR, units[index]))
+            }
         }
     }
 
-    class UnitChangedEvent(field: JTextField, dimension: Float, unit: Float)
+    fun setRowValues(excludedField: JTextField, unitSet: UnitSet, row: Array<JTextField>) {
+        val units = unitSet.asArray()
+        row.forEachIndexed { index, field ->
+            if (field == excludedField) {
+                return@forEachIndexed
+            }
+            field.setTextNoNotify(units[index].value)
+        }
+    }
+
+    class UnitChangedEvent(val field: JTextField, val dimension: Float, val unit: Float)
 }

@@ -1,11 +1,14 @@
 package com.nerdscorner.android.view.utils.plugin.domain
 
-class Unit {
+class Unit(var value: String) {
+
     companion object {
-        const val INCHES_FACTOR = 1f
-        const val DP_FACTOR = 2f
-        const val PX_FACTOR = 3f
-        const val PT_FACTOR = 4f
-        const val MM_FACTOR = 5f
+        const val INCHES_FACTOR = 0.00625f
+        const val DP_FACTOR = 1f
+        const val PX_FACTOR = 1f
+        const val PT_FACTOR = 0.45f
+        const val MM_FACTOR = 0.15875f
+
+        fun asArray() = arrayOf(INCHES_FACTOR, DP_FACTOR, PX_FACTOR, PT_FACTOR, MM_FACTOR)
     }
 }
