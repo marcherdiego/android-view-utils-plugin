@@ -77,6 +77,7 @@ public class DimensionsWindow implements ToolWindowFactory {
     private JTextField xhdpiPx;
     private JTextField xhdpiPt;
     private JTextField xhdpiMm;
+    private JCheckBox roundAllValuesCheckBox;
 
     @Override
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
@@ -150,6 +151,7 @@ public class DimensionsWindow implements ToolWindowFactory {
                         customPx,
                         customPt,
                         customMm,
+                        roundAllValuesCheckBox,
                         bus
                 ),
                 new UnitsPanelModel(bus)

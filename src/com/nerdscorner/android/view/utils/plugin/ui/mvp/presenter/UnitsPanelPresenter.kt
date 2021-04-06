@@ -4,6 +4,7 @@ import com.nerdscorner.android.view.utils.plugin.domain.Dimension
 import com.nerdscorner.android.view.utils.plugin.ui.mvp.model.UnitsPanelModel
 import com.nerdscorner.android.view.utils.plugin.ui.mvp.view.UnitsPanelView
 import com.nerdscorner.android.view.utils.plugin.ui.mvp.view.UnitsPanelView.CustomDensityChangedEvent
+import com.nerdscorner.android.view.utils.plugin.ui.mvp.view.UnitsPanelView.RoundValuesClickedEvent
 import com.nerdscorner.android.view.utils.plugin.ui.mvp.view.UnitsPanelView.UnitChangedEvent
 import org.greenrobot.eventbus.Subscribe
 
@@ -46,5 +47,10 @@ class UnitsPanelPresenter(private val view: UnitsPanelView, private val model: U
     @Subscribe
     fun onCustomDensityChanged(event: CustomDensityChangedEvent) {
         Dimension.setCustomFactor(event.value)
+    }
+
+    @Subscribe
+    fun onRoundValuesClicked(event: RoundValuesClickedEvent) {
+        model.roundValues = event.checked
     }
 }

@@ -8,6 +8,7 @@ import com.nerdscorner.android.view.utils.plugin.utils.UnitUtils
 import org.greenrobot.eventbus.EventBus
 
 class UnitsPanelModel(private val bus: EventBus) {
+    var roundValues = false
 
     fun convertToPx(value: String, sourceUnit: Float): String {
         return if (sourceUnit == Unit.PX_FACTOR) {
@@ -21,7 +22,13 @@ class UnitsPanelModel(private val bus: EventBus) {
 
     fun getUnitSet(dimension: Dimension): UnitSet {
         val pxValue = convertToPx(dimension.realDimension, Unit.DP_FACTOR)
-        return UnitSet(pxValue, dimension.factor, Unit.PX_FACTOR)
+        val unitSet = UnitSet(pxValue, dimension.factor, Unit.PX_FACTOR)
+        if (roundValues) {
+            unitSet.asArray().forEach {
+                it.roundValue()
+            }
+        }
+        return unitSet
     }
 
     private fun getPxValue(value: String, sourceUnit: Float): String {

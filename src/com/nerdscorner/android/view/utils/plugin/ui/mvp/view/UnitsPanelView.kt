@@ -7,6 +7,7 @@ import com.nerdscorner.android.view.utils.plugin.utils.extensions.addTextListene
 import com.nerdscorner.android.view.utils.plugin.utils.extensions.roundToString
 import com.nerdscorner.android.view.utils.plugin.utils.extensions.setTextNoNotify
 import org.greenrobot.eventbus.EventBus
+import javax.swing.JCheckBox
 import javax.swing.JTextField
 
 class UnitsPanelView(
@@ -51,6 +52,7 @@ class UnitsPanelView(
         customPx: JTextField,
         customPt: JTextField,
         customMm: JTextField,
+        roundAllValuesCheckBox: JCheckBox,
         private val bus: EventBus
 ) {
     val ldpiRow = arrayOf(ldpiInches, ldpiDp, ldpiPx, ldpiPt, ldpiMm)
@@ -123,6 +125,10 @@ class UnitsPanelView(
                 bus.post(UnitChangedEvent(this, Dimension.customFactor, Unit.asArray(Dimension.customFactor)[index]))
             }
         }
+        roundAllValuesCheckBox.addActionListener {
+            bus.post(RoundValuesClickedEvent(roundAllValuesCheckBox.isSelected))
+            bus.post(UnitChangedEvent(mdpiRow.first(), Dimension.MDPI_FACTOR, mdpiUnits.first()))
+        }
     }
 
     fun setRowValues(excludedField: JTextField?, unitSet: UnitSet, row: Array<JTextField>) {
@@ -137,4 +143,5 @@ class UnitsPanelView(
 
     class UnitChangedEvent(val field: JTextField, val dimension: Float, val unit: Float)
     class CustomDensityChangedEvent(val value: String)
+    class RoundValuesClickedEvent(val checked: Boolean)
 }

@@ -2,6 +2,10 @@ package com.nerdscorner.android.view.utils.plugin.domain
 
 class Unit(var value: String) {
 
+    fun roundValue() {
+        value = value.toFloat().toInt().toString()
+    }
+
     companion object {
         const val INCHES_FACTOR = 0.00625f
         const val DP_FACTOR = 1f

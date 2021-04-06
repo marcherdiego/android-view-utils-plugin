@@ -9,5 +9,7 @@ class UnitSet(pxValue: String, dimensionFactor: Float, sourceFactor: Float) {
     val pt = UnitUtils.convertValue(pxValue, sourceFactor, Unit.PT_FACTOR)
     val mm = UnitUtils.convertValue(pxValue, sourceFactor, Unit.MM_FACTOR)
 
-    fun asArray() = arrayOf(inches, dp, px, pt, mm)
+    private val valuesArray = arrayOf(inches, dp, px, pt, mm)
+
+    fun asArray() = valuesArray
 }
