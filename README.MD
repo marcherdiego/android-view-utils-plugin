@@ -7,10 +7,10 @@
 - Bind views to its controller class by simply right-clicking the file and selecting the 'Create view bindings from layout...' option
 
 ## Units converter
-![Units converter demo](https://github.com/marcherdiego/andoid-view-utils-plugin/tree/master/gifs/units_converter.gif)
+![Units converter demo](gifs/units_converter.gif)
 
 ## Adapter creator
-![Adapter creator demo](https://github.com/marcherdiego/andoid-view-utils-plugin/tree/master/gifs/adapter_creator.gif)
+![Adapter creator demo](gifs/adapter_creator.gif)
 
 ## View binding
-![View binding demo](https://github.com/marcherdiego/andoid-view-utils-plugin/tree/master/gifs/view_bindings.gif)
+![View binding demo](gifs/view_bindings.gif)
