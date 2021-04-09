@@ -10,7 +10,20 @@
 ![Units converter demo](gifs/units_converter.gif)
 
 ## Adapter creator
+### How to
+- Open `Tools` menu
+- Create `ReciclerView adapter from Layout...`
+- Select source folder
+- Choose layout file
+- Done!
+
 ![Adapter creator demo](gifs/adapter_creator.gif)
 
 ## View binding
+### How to
+- In the Activity/Fragment/View file: Right click
+- Create view bindings from layout...
+- Select layout file
+- Done!
+
 ![View binding demo](gifs/view_bindings.gif)
