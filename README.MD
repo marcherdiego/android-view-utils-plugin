@@ -1,3 +1,7 @@
+![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/r/rating/13549) 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcherdiego/android-view-utils-plugin)
+![Downloads](https://img.shields.io/jetbrains/plugin/d/13549)
+
 # Android View Utils Plugin
 
 [![Get from Marketplace](button.png "Download plugin")](https://plugins.jetbrains.com/plugin/13549-android-view-utils)
